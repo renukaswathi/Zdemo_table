@@ -1,0 +1,22 @@
+<core:myFragment
+xmlns="sap.m"
+xmlns:core="sap.ui.core">
+<Dialog id ="id1"
+        icon="sap-icon://filter"
+        title="Filter product details">
+       
+        <content>
+            <List id="ls2"
+                  items="{/value}"
+                  mode="MultiSelect">
+                  <StandardListItem title="{CompanyName}"/>
+             </List>
+        </content>
+       
+         <endButton>
+            <Button text="ok" icon="sap-icon://accept" press="handleok"/>
+<!--             <Button text="Cancel" icon="sap-icon://cancel"/> -->
+         
+         </endButton>
+ </Dialog>
+ </core:myFragment>
